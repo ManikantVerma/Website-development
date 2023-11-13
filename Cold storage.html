@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cold storage registration</title>
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <script src="js/bootstrap.bundle.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+    <h2>Cold storage registration</h2>
+    <form class="form-group" method="post" action="controller.jsp">
+        <input type="hidden" name="page" value="registration"/>
+        <table>
+            <tr>
+                <td>Enter Name</td>
+                <td>
+                    <input type="text" name="name" class="form-control mt-3" placeholder="Enter Name" />
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Father Name</td>
+                <td>
+                    <input type="text" name="fname" class="form-control mt-3" placeholder="Enter Father Name" />
+                </td>
+            </tr>
+           
+           
+            <tr>
+                <td>Select Gender</td>
+                <td>
+                    <input type="radio" name="gender" value="Male" class="form-check-input mx-1" style="margin-left: 5px;"/>Male
+                    <input type="radio" name="gender" value="Male" class="form-check-input mx-1" style="margin-left: 5px;"/>Female
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Cold Storage Name</td>
+                <td>
+                    <textarea name="coldstorage" class="form-control  mt-4" placeholder="Enter Village" ></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Branch address</td>
+                <td>
+                    <textarea name="branchaddress" class="form-control  mt-4" placeholder="Enter Village" ></textarea>
+                </td>
+            </tr>
+             
+             <tr>
+               <td>Enter pin code</td>
+                <td>
+                    <input type="number" name="pincode" class="form-control  mt-4" placeholder="Enter Pin code" />
+                </td>
+            </tr>
+             <tr>
+               <td>Enter contact</td>
+                <td>
+                    <input type="number" name="contactno" class="form-control  mt-4" placeholder="Enter Contact No" />
+                </td>
+            </tr>
+            <tr>
+               <td >Aadhar No</td>
+                <td >
+                    <input type="number" name="aadharno" class="form-control mt-4" placeholder="Aadhar No" />
+                </td>
+            </tr>
+             <tr>
+                <td>Pan No</td>
+                <td>
+                    <input type="text" name="panno" class="form-control mt-4" placeholder="Pan No" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Email ID
+                </td>
+                <td>
+                    <input type="text" name="emailid" class="form-control mt-3" placeholder="Email ID" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Create Password
+                </td>
+                <td>
+                    <input type="password" name="createpassword" class="form-control mt-4" placeholder="Create Password" />
+                </td>
+            </tr>
+                <tr>
+                    <td>Confirm Password</td>
+                    <td>
+                        <input type="password" name="confirmpassword" class="form-control mt-4" placeholder="Confirm Password" />
+                    </td>
+                </tr>
+        </table>
+        <tr>
+            <td></td>
+                 <button type="submit" class="btn btn-success  mt-3">Register</button>
+        </tr>
+    </form>
+    </div>
+</body>
+</html>
